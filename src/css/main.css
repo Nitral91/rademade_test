@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../../dist/fonts/MyriadPro-Regular.eot");
+  src: local("../../dist/fonts/Myriad Pro Regular"), local("../../dist/fonts/MyriadPro-Regular"), url("../../dist/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../dist/fonts/MyriadPro-Regular.woff") format("woff"), url("../../dist/fonts/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+div, h1, h2, h3, h4, h5, h6, li, ol, p, span, ul {
+  margin: 0;
+  padding: 0; }
+
+li, ol, ul {
+  list-style-type: none; }
+
+button {
+  outline: 0;
+  border: 0;
+  background: 0 0; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+/*Main page*/
+.crm-menu {
+  width: 22.5%;
+  height: calc(100vh - 90px);
+  background: #303841;
+  padding: 45px 0;
+  display: inline-block;
+  float: left; }
+  .crm-menu .title {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #ffc12d;
+    text-transform: uppercase;
+    margin-left: 26px;
+    line-height: 26px; }
+  .crm-menu ul {
+    margin-top: 54px; }
+    .crm-menu ul li {
+      display: block;
+      border-bottom: 1px solid #3d444d;
+      line-height: 66px;
+      color: #e0e1e2;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      margin-left: 26px; }
+      .crm-menu ul li:hover {
+        cursor: pointer;
+        background: #442a9d;
+        margin-left: 0;
+        padding-left: 21px;
+        border-left: 5px solid #ffc12d; }
+      .crm-menu ul li.dashboard::before {
+        content: url("../images/dashoboard-ico.png");
+        margin-right: 20px; }
+      .crm-menu ul li.reports::before {
+        content: url("../images/reports-ico.png");
+        margin-right: 20px; }
+      .crm-menu ul li.customers::before {
+        content: url("../images/customers-ico.png");
+        margin-right: 20px; }
+      .crm-menu ul li.calendar::before {
+        content: url("../images/calendar-ico.png");
+        margin-right: 20px; }
+      .crm-menu ul li.active {
+        background: #442a9d;
+        margin-left: 0;
+        padding-left: 21px;
+        border-left: 5px solid #ffc12d; }
+
+.crm-page {
+  display: inline-block;
+  height: 100vh;
+  width: 77.5%;
+  float: right;
+  background: #ededed; }
+  .crm-page header {
+    background: white;
+    line-height: 68px;
+    border-bottom: 3px solid #fbfbfb;
+    padding: 0 30px; }
+    .crm-page header .breadcrumbs {
+      display: inline-block; }
+      .crm-page header .breadcrumbs a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: #4f4f4f;
+        font-size: 16px; }
+        .crm-page header .breadcrumbs a.active {
+          color: #442a9d; }
+      .crm-page header .breadcrumbs img {
+        margin: 0 10px; }
+    .crm-page header .search-field {
+      display: inline-block;
+      float: right;
+      position: relative; }
+      .crm-page header .search-field input {
+        height: 36px;
+        width: 280px;
+        border: 1px solid #ededed;
+        border-radius: 3px;
+        padding: 0 20px; }
+        .crm-page header .search-field input::placeholder {
+          font-family: 'Open Sans', sans-serif;
+          color: #999999; }
+      .crm-page header .search-field img {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .crm-page header .notices {
+      display: inline-block;
+      float: right;
+      margin: 0 2.5vw;
+      position: relative; }
+      .crm-page header .notices a {
+        position: relative;
+        top: 6px; }
+        .crm-page header .notices a span.count {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          background: #f14e95;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          color: white;
+          line-height: 16px;
+          text-align: center;
+          font-size: 12px;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold; }
+    .crm-page header .user {
+      display: inline-block;
+      float: right;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      color: #4f4f4f; }
+      .crm-page header .user::before {
+        position: relative;
+        top: 14px;
+        width: 38px;
+        height: 38px;
+        display: inline-block;
+        content: url("../images/user-photo.png");
+        margin-right: 10px; }
+  .crm-page .user-info {
+    background: white;
+    width: 100%;
+    display: inline-block;
+    padding: 60px 0 0 0; }
+    .crm-page .user-info .photo {
+      display: inline-block;
+      float: left;
+      width: 15%;
+      text-align: center; }
+    .crm-page .user-info .user-title {
+      border-bottom: 2px solid #f1f1f1;
+      display: inline-block;
+      width: 85%;
+      padding-bottom: 18px; }
+      .crm-page .user-info .user-title .name {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: #4f4f4f;
+        text-transform: uppercase;
+        line-height: 20px;
+        position: relative; }
+        .crm-page .user-info .user-title .name .status {
+          display: inline-block;
+          background: #ffc12d;
+          width: 50px;
+          height: 18px;
+          font-family: "Open Sans", sans-serif;
+          font-size: 11px;
+          color: white;
+          text-align: center;
+          border-radius: 4px;
+          position: relative;
+          top: -4px;
+          margin-left: 14px; }
+      .crm-page .user-info .user-title .job {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: #999999;
+        margin-top: 6px;
+        line-height: 15px; }
+    .crm-page .user-info .contacts {
+      display: flex;
+      justify-content: space-between;
+      width: 45%;
+      float: left;
+      margin-top: 30px; }
+      .crm-page .user-info .contacts .phone {
+        display: inline-block;
+        float: left; }
+        .crm-page .user-info .contacts .phone .title {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          color: #999999;
+          font-size: 12px;
+          text-transform: uppercase; }
+        .crm-page .user-info .contacts .phone a {
+          text-decoration: none;
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          color: #442a9d; }
+      .crm-page .user-info .contacts .address {
+        display: inline-block; }
+        .crm-page .user-info .contacts .address .title {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          color: #999999;
+          font-size: 12px;
+          text-transform: uppercase; }
+        .crm-page .user-info .contacts .address .content {
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          color: #442a9d; }
+    .crm-page .user-info .button-wrapper {
+      display: inline-block;
+      width: 32%;
+      float: left;
+      text-align: right;
+      padding: 30px 35px; }
+      .crm-page .user-info .button-wrapper button.create_quote {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #303841;
+        color: #ffc12d;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        border-radius: 3px;
+        text-transform: uppercase; }
+        .crm-page .user-info .button-wrapper button.create_quote:hover {
+          cursor: pointer; }
+  .crm-page .tab-wrapper {
+    background: white; }
+    .crm-page .tab-wrapper ul {
+      padding: 0 35px; }
+      .crm-page .tab-wrapper ul li {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #303841;
+        padding: 0 16px;
+        position: relative;
+        line-height: 60px; }
+        .crm-page .tab-wrapper ul li.active::after {
+          display: inline-block;
+          content: '';
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: -1px;
+          height: 6px;
+          background: #442a9d;
+          border-radius: 3px; }
+        .crm-page .tab-wrapper ul li:hover {
+          cursor: pointer; }
